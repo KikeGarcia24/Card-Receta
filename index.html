@@ -2,76 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Recipe page</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./styles/main.css">
+  <title>Página de receta</title>
 </head>
 <body>
-
-  Simple Omelette Recipe
-
-  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
-
-  Preparation time
-
-  Total: Approximately 10 minutes
-  Preparation: 5 minutes
-  Cooking: 5 minutes
-
-  Ingredients
-
-  2-3 large eggs
-  Salt, to taste
-  Pepper, to taste
-  1 tablespoon of butter or oil
-  Optional fillings: cheese, diced vegetables, cooked meats, herbs
-
-  Instructions
-
-  Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-  You can add a tablespoon of water or milk for a fluffier texture.
-
-  Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
-
-  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-  the eggs evenly coat the surface.
-
-  Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-  middle, sprinkle your chosen fillings over one half of the omelette.
-
-  Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-  fillings. Let it cook for another minute, then slide it onto a plate.
-
-  Enjoy: Serve hot, with additional salt and pepper if needed.
-
-  Nutrition
-
-  The table below shows nutritional values per serving without the additional fillings.
-
-  Calories
-  277kcal
-
-  Carbs
-  0g
-
-  Protein
-  20g
-
-  Fat
-  22g
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <main>
+    <article class="card__container">
+      <section class="img__container">
+        <img src="./assets/images/image-omelette.jpeg" alt="Omelette Picture">
+      </section>
+      <section class="quick__info">
+        <h1>Receta sencilla de Omelette</h1>
+        <p>Un plato fácil y rápido, perfecto para cualquier comida. Esta clásica tortilla combina huevos batidos cocinados a la perfección, opcionalmente rellenos con tu elección de queso, verduras o carnes.</p>
+      </section>
+      <section class="prepTime">
+        <h3>Tiempo de preparación</h3>
+        <ul>
+          <li><b>Total:</b> Aproximadamente 10 minutos</li>
+          <li><b>Preparación:</b> 5 minutos</li>
+          <li><b>Cocción:</b> 5 minutos</li>
+        </ul>
+      </section>
+      <section class="ingredients">
+        <h3 class="subtitles">Ingredientes</h3>
+        <ul>
+          <li><span>2-3 huevos grandes</span></li>
+          <li><span>Sal, al gusto</span></li>
+          <li><span>Pimienta, al gusto</span></li>
+          <li><span>1 cucharada de mantequilla o aceite</span></li>
+          <li><span>Rellenos opcionales: queso, verduras en cubitos, carnes cocidas, hierbas</span></li>
+        </ul>
+      </section>
+      <hr>
+      <section class="instructions">
+        <h3 class="subtitles">Instrucciones</h3>
+        <ol>
+          <li><b>Batir los huevos:</b> En un tazón, batir los huevos con una pizca de sal y pimienta hasta que estén bien mezclados. Puedes añadir una cucharada de agua o leche para obtener una textura más esponjosa.</li>
+          <li><b>Calentar la sartén:</b> Colocar una sartén antiadherente a fuego medio y añadir la mantequilla o aceite.</li>
+          <li><b>Cocinar la tortilla:</b> Una vez que la mantequilla se haya derretido y esté burbujeante, verter los huevos. Inclinar la sartén para asegurarse de que los huevos cubran uniformemente la superficie.</li>
+          <li><b>Añadir rellenos (opcional):</b> Cuando los huevos comiencen a cuajarse en los bordes pero aún estén ligeramente líquidos en el centro, esparcir los rellenos elegidos sobre la mitad de la tortilla.</li>
+          <li><b>Doblar y servir:</b> A medida que la tortilla continúa cocinándose, levantar cuidadosamente un borde y doblarlo sobre los rellenos. Dejar cocinar por otro minuto, luego deslizarlo sobre un plato.</li>
+          <li><b>Disfrutar:</b> Servir caliente, con sal y pimienta adicionales si es necesario.</li>
+        </ol>
+      </section>
+      <hr>
+      <section class="nutrition">
+        <h3 class="subtitles">Nutrición</h3>
+        <p>La tabla a continuación muestra los valores nutricionales por porción sin los rellenos adicionales.</p>
+        <table>
+          <tr>
+            <td>Calorías</td>
+            <td>277 kcal</td>
+          </tr>
+          <tr>
+            <td>Carbohidratos</td>
+            <td>0g</td>
+          </tr>
+          <tr>
+            <td>Proteínas</td>
+            <td>20g</td>
+          </tr>
+          <tr>
+            <td>Grasas</td>
+            <td>22g</td>
+          </tr>
+        </table>
+      </section>
+    </article>
+  </main>
 </body>
 </html>

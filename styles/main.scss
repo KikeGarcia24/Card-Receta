@@ -1,0 +1,111 @@
+//Colores y fuentes
+$fontTitles: "Young Serif", serif;
+$colorMainTitle:hsl(24, 5%, 18%);
+$colorSectionTitle:hsl(12, 40%, 37%);
+$fontTxt:"Outfit", sans-serif;
+$colorTxt:#676562;
+$colorPrepTitle:hsl(332, 51%, 32%);
+$bgPrep:#FFF7FC;
+
+
+//Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: #F3E5D8;
+}
+
+main{
+    .card__container{
+        margin: 7.5rem auto;
+        height: 100%;
+        width: 650px;
+        padding: 2.5rem;
+        background-color: #ffffff;
+        border-radius: 20px;
+        .subtitles{
+            font-family: $fontTitles;
+            color: $colorSectionTitle;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+        hr{
+            color: #E7E7E7;
+        }
+        .img__container{
+            width: 656px;
+            height: 300px;
+            margin: 0 auto;
+            >img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        .quick__info{
+            >h1{
+                margin: 3rem 0 2.3rem 0;
+                font-size: 2.5rem;
+                font-family: $fontTitles;
+                font-weight: 400;
+                color: $colorMainTitle;
+            }
+            >p{
+                margin-bottom: 2.5rem;
+                font-family: $fontTxt;
+                color: $colorTxt;
+            }
+        }
+        .prepTime{
+            margin-bottom: 2.1rem;
+            padding: 1.5rem;
+            background-color: $bgPrep;
+            border-radius: 15px;
+            >h3{
+                color: $colorPrepTitle;
+                font-family: $fontTxt;
+            }
+            >ul{
+                margin: 1.5rem 1.5rem 0 1.5rem;
+                >li{
+                    font-family: $fontTxt;
+                    color: $colorTxt;
+                    margin-bottom: 1rem;
+                    &::marker{
+                        color: $colorPrepTitle;
+                    }
+                    >b{
+                        margin-left: 2rem;
+                    }
+                }
+            }
+        }
+        .ingredients{
+            margin-bottom: 2.3rem;
+            >ul{
+                margin: 1.5rem;
+                >li{
+                    font-family: $fontTxt;
+                    color: $colorTxt;
+                    margin-bottom: 1rem;
+                    >span{
+                        margin-left: 2rem;
+                    }
+                    &::marker{
+                        color: $colorSectionTitle;
+                    }
+                }
+            }
+        }
+        .instructions{
+            margin: 2.3rem 0;
+            >ol{
+                margin: 1.5rem;
+            }
+        }
+    }
+}
