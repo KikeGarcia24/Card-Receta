@@ -9,7 +9,7 @@ html {
   background-color: #F3E5D8;
 }
 
-main .card__container {
+.card__container {
   margin: 7.5rem auto;
   height: 100%;
   width: 650px;
@@ -18,116 +18,116 @@ main .card__container {
   border-radius: 20px;
 }
 @media screen and (max-width: 720px) {
-  main .card__container {
+  .card__container {
     margin: 0;
     border-radius: 0;
   }
 }
-main .card__container .subtitles {
+.card__container .subtitles {
   font-family: "Young Serif", serif;
   color: hsl(12, 40%, 37%);
   font-size: 1.5rem;
   font-weight: 400;
 }
-main .card__container hr {
+.card__container hr {
   color: #E7E7E7;
 }
-main .card__container .img__container {
+.card__container .img__container {
   width: 656px;
   height: 300px;
   margin: 0 auto;
 }
-main .card__container .img__container > img {
+.card__container .img__container > img {
   width: 100%;
   border-radius: 10px;
 }
-main .card__container .quick__info > h1 {
+.card__container .quick__info > h1 {
   margin: 3rem 0 2.3rem 0;
   font-size: 2.5rem;
   font-family: "Young Serif", serif;
   font-weight: 400;
   color: hsl(24, 5%, 18%);
 }
-main .card__container .quick__info > p {
+.card__container .quick__info > p {
   margin-bottom: 2.5rem;
   font-family: "Outfit", sans-serif;
   color: #676562;
 }
-main .card__container .prepTime {
+.card__container .prepTime {
   margin-bottom: 2.1rem;
   padding: 1.5rem;
   background-color: #FFF7FC;
   border-radius: 15px;
 }
-main .card__container .prepTime > h3 {
+.card__container .prepTime > h3 {
   color: hsl(332, 51%, 32%);
   font-family: "Outfit", sans-serif;
 }
-main .card__container .prepTime > ul {
+.card__container .prepTime > ul {
   margin: 1.5rem 1.5rem 0 1.5rem;
 }
-main .card__container .prepTime > ul > li {
+.card__container .prepTime > ul > li {
   font-family: "Outfit", sans-serif;
   color: #676562;
   margin-bottom: 1rem;
 }
-main .card__container .prepTime > ul > li::marker {
+.card__container .prepTime > ul > li::marker {
   color: hsl(332, 51%, 32%);
 }
-main .card__container .prepTime > ul > li > b {
+.card__container .prepTime > ul > li > b {
   margin-left: 2rem;
 }
-main .card__container .ingredients {
+.card__container .ingredients {
   margin-bottom: 2.3rem;
 }
-main .card__container .ingredients > ul {
+.card__container .ingredients > ul {
   margin: 1.5rem;
 }
-main .card__container .ingredients > ul > li {
+.card__container .ingredients > ul > li {
   font-family: "Outfit", sans-serif;
   color: #676562;
   margin-bottom: 1rem;
 }
-main .card__container .ingredients > ul > li > span {
+.card__container .ingredients > ul > li > span {
   margin-left: 2rem;
 }
-main .card__container .ingredients > ul > li::marker {
+.card__container .ingredients > ul > li::marker {
   color: hsl(12, 40%, 37%);
 }
-main .card__container .instructions {
+.card__container .instructions {
   margin: 2.3rem 0;
 }
-main .card__container .instructions > ol {
+.card__container .instructions > ol {
   margin: 1.5rem;
 }
-main .card__container .instructions > ol > li {
+.card__container .instructions > ol > li {
   font-family: "Outfit", sans-serif;
   color: #676562;
 }
-main .card__container .instructions > ol > li::marker {
+.card__container .instructions > ol > li::marker {
   color: hsl(12, 40%, 37%);
   font-weight: 600;
 }
-main .card__container .nutrition {
+.card__container .nutrition {
   margin-top: 2.3rem;
   font-family: "Outfit", sans-serif;
   color: #676562;
 }
-main .card__container .nutrition > p {
+.card__container .nutrition > p {
   margin: 2rem 0 1rem 0;
 }
-main .card__container .nutrition > table {
+.card__container .nutrition > table {
   width: 100%;
   border-collapse: collapse;
 }
-main .card__container .nutrition > table tbody tr td {
+.card__container .nutrition > table tbody tr td {
   border-bottom: 2px solid #eaeaea;
   font-weight: 550;
 }
-main .card__container .nutrition > table tbody tr #quantity {
+.card__container .nutrition > table tbody tr #quantity {
   color: hsl(12, 40%, 37%);
   font-weight: 700;
 }
-main .card__container .nutrition > table tbody tr:last-child td {
+.card__container .nutrition > table tbody tr:last-child td {
   border-style: none;
 }/*# sourceMappingURL=main.css.map */
