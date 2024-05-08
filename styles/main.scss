@@ -12,6 +12,13 @@ $bgPrep:#FFF7FC;
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
+//Mixin de media query
+@mixin breakpoint(){
+    @media screen and (max-width:720px) {
+        @content
+    }
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -28,6 +35,10 @@ main{
         padding: 2.5rem;
         background-color: #ffffff;
         border-radius: 20px;
+        @include breakpoint(){
+            margin: 0;
+            border-radius: 0;
+        }
         .subtitles{
             font-family: $fontTitles;
             color: $colorSectionTitle;
@@ -105,6 +116,44 @@ main{
             margin: 2.3rem 0;
             >ol{
                 margin: 1.5rem;
+                >li{
+                    font-family: $fontTxt;
+                    color: $colorTxt;
+                    &::marker{
+                        color: $colorSectionTitle;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+        .nutrition{
+            margin-top: 2.3rem;
+            font-family: $fontTxt;
+            color: $colorTxt;
+            >p{
+                margin: 2rem 0 1rem 0;
+            }
+            >table{
+                width: 100%;
+                border-collapse: collapse;
+                tbody{
+                    tr{
+                        
+                        td{
+                            border-bottom:2px solid #eaeaea;
+                            font-weight: 550;
+                        }
+                        #quantity{
+                            color: $colorSectionTitle;
+                            font-weight: 700;
+                        }
+                        &:last-child{
+                            td{
+                                border-style:none;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

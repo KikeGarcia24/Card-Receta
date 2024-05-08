@@ -17,6 +17,12 @@ main .card__container {
   background-color: #ffffff;
   border-radius: 20px;
 }
+@media screen and (max-width: 720px) {
+  main .card__container {
+    margin: 0;
+    border-radius: 0;
+  }
+}
 main .card__container .subtitles {
   font-family: "Young Serif", serif;
   color: hsl(12, 40%, 37%);
@@ -93,4 +99,35 @@ main .card__container .instructions {
 }
 main .card__container .instructions > ol {
   margin: 1.5rem;
+}
+main .card__container .instructions > ol > li {
+  font-family: "Outfit", sans-serif;
+  color: #676562;
+}
+main .card__container .instructions > ol > li::marker {
+  color: hsl(12, 40%, 37%);
+  font-weight: 600;
+}
+main .card__container .nutrition {
+  margin-top: 2.3rem;
+  font-family: "Outfit", sans-serif;
+  color: #676562;
+}
+main .card__container .nutrition > p {
+  margin: 2rem 0 1rem 0;
+}
+main .card__container .nutrition > table {
+  width: 100%;
+  border-collapse: collapse;
+}
+main .card__container .nutrition > table tbody tr td {
+  border-bottom: 2px solid #eaeaea;
+  font-weight: 550;
+}
+main .card__container .nutrition > table tbody tr #quantity {
+  color: hsl(12, 40%, 37%);
+  font-weight: 700;
+}
+main .card__container .nutrition > table tbody tr:last-child td {
+  border-style: none;
 }/*# sourceMappingURL=main.css.map */
